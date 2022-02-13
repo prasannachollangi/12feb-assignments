@@ -1,0 +1,21 @@
+#write a program to compare 2 numbers:-
+n1=int(input('Enter number 1 value:'))
+n2=int(input('Enter number 2 value:'))
+if n1!=n2:
+  print('n1 and n2 are not equal')
+if n1>n2:
+    print('n1 is bigger than n2')              
+elif n1<n2:
+    print('n1 is smaller than n2')
+else:
+    print('n1 and n2 are equal') 
+
+OUTPUT1:- 
+Enter number 1 value:3
+Enter number 2 value:3
+n1 and n2 are equal
+OUTPUT2:-
+Enter number 1 value:34
+Enter number 2 value:43
+n1 and n2 are not equal
+n1 is smaller than n2
