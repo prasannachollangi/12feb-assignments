@@ -1,0 +1,37 @@
+# Program for super market bill:-
+Tp=50
+cheese=150
+Cp=290
+ghee=500
+oil=600
+Cname=input('Enter customer name:')
+Cpno=input('Enter customer phone number:')
+Tpq=int(input('Enter no of turmanic powder packets:'))
+cheeseq=int(input('Enter no of cheese packets:'))
+Cpq=int(input('Enter no of chilly powder packets:'))
+gheeq=int(input('Enter no of ghee packets:'))
+oilq=int(input('Enter no of oil packets:'))
+bill=(Tp*Tpq)+(cheese*cheeseq)+(Cp*Cpq)+(ghee*gheeq)+(oil*oilq)
+if bill>5000:
+    dis=bill*10/100
+elif bill>3000:
+    dis=bill*8/100
+elif bill>2000:
+    dis=bill*5/100
+elif bill>1000:
+    dis=bill*3/100
+elif bill<1000:
+    dis=0
+tax=bill*10/100 if bill>3000 else bill*18/100
+mainbill=bill-dis+tax
+print('Total bill=',mainbill)
+
+OUTPUT:-
+Enter customer name:dgdfg
+Enter customer phone number:565
+Enter no of turmanic powder packets:3
+Enter no of cheese packets:2
+Enter no of chilly powder packets:1
+Enter no of ghee packets:5
+Enter no of oil packets:1
+Total bill= 3916.8
